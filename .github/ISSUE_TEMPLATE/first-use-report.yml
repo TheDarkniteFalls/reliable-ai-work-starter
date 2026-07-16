@@ -1,0 +1,86 @@
+name: First-use report
+description: Share a public-safe result from trying the Reliable AI Work Starter.
+title: "[First use]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for trying the starter. GitHub issues are public. Do not include private messages, credentials, personal records, customer data, internal links, connector exports, raw model logs, or unpublished material. Generalize or replace sensitive details with synthetic examples.
+  - type: input
+    id: starter_version
+    attributes:
+      label: Starter version
+      description: Use the release tag or commit shown in your copy.
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: perspective
+    attributes:
+      label: Your perspective
+      description: Choose the closest fit; no personal details are needed.
+      options:
+        - Writer or creator
+        - Researcher or analyst
+        - Programme or operations lead
+        - Small-business owner
+        - Software or AI practitioner
+        - Other public-safe perspective
+    validations:
+      required: true
+  - type: input
+    id: workflow
+    attributes:
+      label: Workflow attempted
+      description: Describe the general kind of work without naming private people, organizations, or systems.
+      placeholder: A weekly public-source research brief
+    validations:
+      required: true
+  - type: dropdown
+    id: completion
+    attributes:
+      label: First useful result
+      options:
+        - Completed and used
+        - Completed and edited
+        - Completed and rejected
+        - Could not complete
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What happened
+      description: Summarize the public-safe result, visible proof, and anything that remained uncertain.
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: First point of friction
+      description: Name the first confusing term, hidden assumption, unnecessary step, or missing capability.
+    validations:
+      required: true
+  - type: textarea
+    id: trust
+    attributes:
+      label: What helped or hurt trust
+      description: Which boundary, source rule, validation step, or missing proof affected your confidence?
+    validations:
+      required: true
+  - type: textarea
+    id: smallest_change
+    attributes:
+      label: Smallest useful change
+      description: Suggest one bounded improvement for the next first-time user.
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_boundary
+    attributes:
+      label: Public-data check
+      options:
+        - label: I removed private, identifying, credential, customer, internal, connector, and unpublished information from this report.
+          required: true
+        - label: No external action was taken merely to complete this trial, or any such action was separately authorized by its real owner.
+          required: true
