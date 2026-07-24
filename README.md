@@ -111,11 +111,11 @@ PASS template_links
 
 ## Share Public-Safe Feedback
 
-After one real first use, you may submit a
+After one real first use, you may optionally submit a
 [structured first-use report](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml).
-The form asks for generalized or synthetic details only. The first three
-reports will be summarized in `USAGE_EVIDENCE.md` and used to choose the
-smallest supported correction.
+The form asks for generalized or synthetic details only. The public
+`USAGE_EVIDENCE.md` ledger records only what reporters chose to share and
+separates evidence-backed corrections from maintainer judgement.
 
 ## Public-Safe Use
 
