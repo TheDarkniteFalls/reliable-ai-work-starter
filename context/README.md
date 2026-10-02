@@ -1,17 +1,17 @@
 # Context
 
-This folder holds the small amount of durable context earned by real use.
-
-Keep small source-backed notes that help later work. Do not copy broad exports
+Use this folder for short notes you want a later session to remember. Add a
+note when it helps the recurring job, and include the source behind it. Do not copy broad exports
 or raw conversations into this folder by default.
 
-Each durable note should record:
+For each note, record:
 
-- status: `confirmed`, `provisional`, or `needs_judgement`;
+- status: `confirmed` (checked), `provisional` (tentative), or
+  `needs_judgement` (a decision is still needed);
 - source and source date;
 - confidence;
 - review date or expiry condition;
 - conflicts or important limitations.
 
-Discovery clues may be stored as retrieval hints, but must not silently become
-proven facts, relationships, preferences, or ownership.
+You can keep a clue to help find a source later. Label it as a clue: it does
+not establish a fact, relationship, preference, or who owns something.
