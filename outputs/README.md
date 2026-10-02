@@ -1,20 +1,19 @@
 # Outputs
 
-This folder is the durable home for material results from the recurring
-workflow.
+Save the results you want to review or reuse here, so you can find them after
+the chat ends. For example, a draft project update can sit beside a short note
+about its sources and the checks you performed.
 
-Save reusable results here instead of leaving them only in chat.
+An important result should normally include:
 
-A material output should normally include:
-
-- a stable ID and intended use;
-- sources and their as-of dates;
+- an ID you can reuse when referring to it, and what it is for;
+- sources and the dates their information applies to;
 - assumptions, limits, and unresolved questions;
 - the result;
 - validation performed after the final change;
-- next action and owner;
+- the next action and who is responsible for it;
 - a review, replacement, or retirement condition when useful.
 
-Raw evidence belongs in a deliberately chosen source location. Chat and output
-files should carry only the material needed to understand, review, and reuse
-the result.
+Keep raw evidence in the source location you agreed to use. Include only what
+a reader needs to understand, review, and reuse the result in chat and output
+files.

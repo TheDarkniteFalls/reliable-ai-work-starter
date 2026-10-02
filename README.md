@@ -1,25 +1,19 @@
 # Reliable AI Work Starter
 
-<!-- toolkit-trust-card:start -->
-> **Public contract:** Experimental starter · about 10 min · No code; Python optional · no model · no network
->
-> **Operation:** Edits three named local files after approval
->
-> **A pass establishes:** The declared starter files, setup boundary, template links, and public-safety text pass deterministic structural checks.
->
-> **It does not establish:** The starter does not run an agent, enforce permissions, inspect sources, or prove that a live workflow is useful.
->
-> **First check:** `python3 -B check_starter.py`
-<!-- toolkit-trust-card:end -->
+Start one recurring job with an AI assistant and a small set of files you can
+read and edit. Keep your copy private: this is where you name the job, choose
+its sources, and say what the assistant must ask before doing.
 
-A private-by-default, file-based starting point for one useful AI-assisted
-workflow.
+For example, you could try drafting a weekly project update from notes you
+choose to provide. The starter gives you a place to keep those choices and
+review the saved result in a later session. It does not run the assistant or
+enforce its permissions.
 
-This repository is for people who want Codex or a similar file-and-tool agent
-to help with recurring work without first building an app, granting broad
-connector access, or moving important decisions into chat history.
+You do not need to build an app or connect a collection of services to begin.
+Create your copy, use the setup prompt below, then try one job from start to
+finish.
 
-## Create Your Copy
+## Create your private copy
 
 [Create a private repository from this starter](https://github.com/new?template_owner=TheDarkniteFalls&template_name=reliable-ai-work-starter&visibility=private),
 then open the new repository in Codex.
@@ -28,9 +22,10 @@ If you prefer a local folder, use GitHub's **Code → Download ZIP** action and
 extract it somewhere private. Keep real source material in your own copy, not
 in a public issue or pull request.
 
-## Start In One Prompt
+## Set up your first job
 
-Paste this into a fresh Codex session opened in your copied starter:
+Open a fresh Codex session in your copied starter and paste this prompt.
+Review the proposed setup before approving changes to the three named files:
 
 ```text
 Help me personalize this minimum assistant workspace.
@@ -47,39 +42,54 @@ unconfigured, and one exact prompt I can use to run it. Do not take any
 external action.
 ```
 
-## What The Files Do
+<!-- toolkit-trust-card:placement -->
 
-- `WORKING_AGREEMENT.md` defines purpose, sources, authority, output rules, and
-  completion proof.
-- `TODAY.md` holds current focus, next moves, blockers, waiting items, and
-  outputs needing review.
-- `SOURCE_SHELF.md` records what each source is authoritative for, its date,
-  limitations, and review timing.
-- `REVIEW_LOG.md` records what happened to material outputs and what was
-  learned.
-- `context/` holds small source-backed notes with visible confidence states.
-- `outputs/` holds reusable results outside chat.
+<!-- toolkit-trust-card:start -->
+> **Public contract:** Experimental starter · about 10 min · No code; Python optional · no model · no network
+>
+> **Operation:** Edits three named local files after approval
+>
+> **A pass establishes:** The declared starter files, setup boundary, template links, and public-safety text pass deterministic structural checks.
+>
+> **It does not establish:** The starter does not run an agent, enforce permissions, inspect sources, or prove that a live workflow is useful.
+>
+> **First check:** `python3 -B check_starter.py`
+<!-- toolkit-trust-card:end -->
 
-Do not fill these files with every fact, task, or conversation. Preserve only
-the minimum state that helps a later session do better work.
+## Find your way around the files
 
-## First-Use Test
+- `WORKING_AGREEMENT.md` names the job, trusted sources, permitted
+  actions, and checks needed before calling the work done.
+- `TODAY.md` keeps the current job, next steps, blockers, and
+  results waiting for your review in one place.
+- `SOURCE_SHELF.md` records which questions each source can answer,
+  how old it is, and when you should check it again.
+- `REVIEW_LOG.md` records whether you used, changed or rejected an
+  important result, and what you learned.
+- `context/` holds short notes with their sources and confidence labels.
+- `outputs/` holds results you want to keep and reuse.
 
-Before adding more machinery:
+Keep these files short. Save what the next session needs to continue the job;
+you do not need to copy every conversation into them.
+
+## Try one complete workflow
+
+Once the setup is agreed:
 
 1. Use a fresh session that can see only this workspace and sources you
    deliberately add.
-2. Run one bounded workflow through to a saved output.
-3. Confirm that the result names its sources, uncertainty, validation, next
-   action, and owner.
+2. Run the one agreed job and save its output.
+3. Check that the result names its sources, uncertainty, checks performed,
+   next action, and the person responsible for that action.
 4. Record whether the result was used, edited, rejected, or superseded.
 5. Stop if the workflow needs hidden state, broad access, an unsafe external
    action, or more setup than the expected result is worth.
 
-The starter passes when a fresh session completes one useful workflow from the
-declared files and sources alone. A polished folder structure is not proof.
+For your first-use test, success means a fresh session completes one useful
+job using the files and sources you named. Review the actual output before
+deciding whether to keep using the workflow.
 
-## Public Contract
+## What this starter does
 
 - **Time to first setup:** about 10 minutes.
 - **Runtime:** no code required; Python is used only for the optional structural
@@ -89,11 +99,9 @@ declared files and sources alone. A polished folder structure is not proof.
 - **External authority:** sending, publishing, purchasing, deleting, deploying,
   or changing shared state always requires a separate decision.
 
-The structural check proves that the declared starter files and public-safety
-boundaries are present. It does not run an agent, enforce permissions, inspect
-your sources, or prove that the workflow will be useful.
+## What the structural check tells you
 
-## Check The Starter
+If you have Python, run this optional check from the starter folder:
 
 ```sh
 python3 -B check_starter.py
@@ -109,7 +117,12 @@ PASS public_safe_text
 PASS template_links
 ```
 
-## Share Public-Safe Feedback
+These five passes confirm the expected files, agreement sections, setup
+boundary, safety wording and template links are present. They do not run an
+agent, enforce permissions, inspect your sources, or show whether the workflow
+will be useful. That needs the first-use test above.
+
+## Share feedback if you want to
 
 After one real first use, you may optionally submit a
 [structured first-use report](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml).
@@ -117,7 +130,7 @@ The form asks for generalized or synthetic details only. The public
 `USAGE_EVIDENCE.md` ledger records only what reporters chose to share and
 separates evidence-backed corrections from maintainer judgement.
 
-## Public-Safe Use
+## Keep private material in your own copy
 
 Never add private messages, credentials, personal records, customer data,
 internal links, connector exports, raw model logs, or unpublished material to
